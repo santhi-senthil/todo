@@ -1,0 +1,141 @@
+/* ==== GENERAL ==== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #fff7d0; /* Light yellow background */
+  height: 100%;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  width: 100%;
+  background-color: #003566; /* Deep intense blue */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  margin: 0;
+  flex-shrink: 0;
+  color: #ffcc00;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.register-button {
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.register-button:hover {
+  background-color: #ffd60a;
+  transform: scale(1.05);
+}
+
+/* ==== LOGIN WRAPPER ==== */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==== LOGIN FORM - DARKER BLUE GLASS ==== */
+.login-form {
+  margin-top: 80px;
+  background: rgba(0, 70, 140, 0.4); /* Stronger blue glass */
+  backdrop-filter: blur(14px);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ==== INPUT FIELDS ==== */
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #f8f8f8;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.4);
+}
+
+/* ==== SUBMIT BUTTON - DARK YELLOW ==== */
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #f9a825; /* Dark yellow */
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px; /* Rounded button */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #fbc02d;
+  transform: scale(1.03);
+}
+
+/* ==== ERROR TEXT ==== */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ==== MEDIA QUERIES ==== */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .register-button {
+    margin-top: 10px;
+  }
+
+  .login-form {
+    margin-top: 60px;
+    padding: 30px;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+  }
+}
